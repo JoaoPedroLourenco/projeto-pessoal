@@ -1,0 +1,94 @@
+.direita{
+    width: 400px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.novidades{
+    width: 300px;
+    text-align: center;
+    background: #4D4D4D;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.novidades > h3{
+    font-size: 1.5em;
+}
+
+.novidades > p{
+    font-size: 1.2em;
+    margin-top: -10px;
+}
+
+.novidades > .novidadeCards{
+    position: relative;
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.novidadeCards > .card{
+    width: 250px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #454545;
+    border: none;
+    outline: 1px solid #ffffff23;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .2s;
+    text-align: left;
+    padding-left: 10px;
+    position: relative;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-shadow: #000000 0px 3px 3px ;
+}
+
+.card > .circle{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: -40px;
+    top: -40px;
+    border-radius: 50%;
+    filter: blur(20px);
+    background: rgba(135, 135, 135, 0.24);
+    opacity: 0;
+    transition: .2s;
+}
+
+.card:hover{
+    outline: 1.5px solid #ffffff4d;
+}
+
+.card:hover .circle{
+    opacity: 1;
+}
+
+
+.card > h3{
+    font-size: 1em;
+}
+
+.card > p{
+    font-size: .8em;
+}
