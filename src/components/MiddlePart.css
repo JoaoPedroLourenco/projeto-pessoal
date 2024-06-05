@@ -1,11 +1,4 @@
-.middle{
-    width: 850px;
-    height: auto;
-    border-right: 1px solid #ffffff4d;
-   
-}
-
-.middle > .title{
+.title{
     width: 100%;
     height: 70px;
     border-bottom: 1px solid #ffffff4d;
@@ -56,9 +49,14 @@
     overflow: hidden;
     transition: .2s;
     text-align: left;
+    padding-top: 20px;
     padding-left: 10px;
     position: relative;
     color: white;
+}
+
+.card > h3{
+    margin-top: -20px;
 }
 
 .card > .circle{
@@ -83,7 +81,7 @@
 }
 
 .card:focus{
-    transition-duration: 1.s;
+    transition-duration: 0s;
     outline: 2px solid #6e6ac7;
 }
 
@@ -91,6 +89,12 @@
     outline: 2px solid #6e6ac7;
 }
 
+.card:focus .circle{
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    opacity: 1;
+}
 
 .card > p{
     margin-top: -10px;

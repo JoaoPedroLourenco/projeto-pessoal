@@ -1,7 +1,13 @@
 import React from "react";
 import "./SideBar.css";
 
-const SideBar = ({ homePage, outraPage }) => {
+const SideBar = ({
+  homePage,
+  contactsPage,
+  aboutPage,
+  loginPage,
+  cadastroPage,
+}) => {
   return (
     <aside>
       <nav>
@@ -10,13 +16,17 @@ const SideBar = ({ homePage, outraPage }) => {
             <button onClick={homePage}>Home</button>
           </li>
           <li>
-            <button>About</button>
+            <button onClick={aboutPage}>About</button>
           </li>
           <li>
-            <button onClick={outraPage}>Contacts</button>
+            <button onClick={contactsPage}>Contacts</button>
           </li>
         </ul>
       </nav>
+      <div className="login">
+        <button onClick={loginPage}>Login</button>
+        <button onClick={cadastroPage}>Cadastro</button>
+      </div>
     </aside>
   );
 };

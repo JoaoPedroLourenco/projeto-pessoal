@@ -4,10 +4,16 @@ import SideBar from "./components/SideBar";
 import Novidades from "./components/Novidades";
 import { useState } from "react";
 import OutraPage from "./components/OutraPage";
+import AboutPage from "./components/AboutPage";
+import Login from "./components/Login";
+import Cadastro from "./components/Cadastro";
 
 const pages = [
   { id: 1, page: "home" },
-  { id: 2, page: "outra" },
+  { id: 2, page: "about" },
+  { id: 3, page: "contacts" },
+  { id: 4, page: "login" },
+  { id: 5, page: "cadastro" },
 ];
 
 function App() {
@@ -17,13 +23,31 @@ function App() {
     setPagina(pages[0].page);
   };
 
-  const outraPage = () => {
+  const aboutPage = () => {
     setPagina(pages[1].page);
+  };
+
+  const contactsPage = () => {
+    setPagina(pages[2].page);
+  };
+
+  const loginPage = () => {
+    setPagina(pages[3].page);
+  };
+
+  const cadastroPage = () => {
+    setPagina(pages[4].page);
   };
 
   return (
     <div className="App">
-      <SideBar homePage={homePage} outraPage={outraPage} />
+      <SideBar
+        homePage={homePage}
+        contactsPage={contactsPage}
+        aboutPage={aboutPage}
+        loginPage={loginPage}
+        cadastroPage={cadastroPage}
+      />
       {pagina === "home" && (
         <MiddlePart
           textoCard="Lorem Ipsum"
@@ -31,7 +55,13 @@ function App() {
         />
       )}
 
-      {pagina === "outra" && <OutraPage />}
+      {pagina === "about" && <AboutPage />}
+
+      {pagina === "contacts" && <OutraPage />}
+
+      {pagina === "login" && <Login />}
+
+      {pagina === "cadastro" && <Cadastro />}
 
       <Novidades
         cardTexto="Lorem Ipsum"

@@ -2,8 +2,12 @@ import React from "react";
 import "./MiddlePart.css";
 
 const MiddlePart = ({ textoCard, pgCard }) => {
+  const h3Style = {
+    fontSize: 18,
+  };
+
   return (
-    <div className="middle">
+    <div className="Container middle">
       <div className="title">
         <h1>Home Page</h1>
       </div>
@@ -23,22 +27,22 @@ const MiddlePart = ({ textoCard, pgCard }) => {
 
       <div className="cards">
         <button className="card">
-          <h3>{textoCard}</h3>
+          <h3 style={h3Style}>{textoCard}</h3>
           <p>{pgCard}</p>
           <div className="circle"></div>
         </button>
         <button className="card">
-          <h3>{textoCard}</h3>
+          <h3 style={h3Style}>{textoCard}</h3>
           <p>{pgCard}</p>
           <div className="circle"></div>
         </button>
         <button className="card">
           <div className="circle"></div>
-          <h3>{textoCard}</h3>
+          <h3 style={h3Style}>{textoCard}</h3>
           <p>{pgCard}</p>
         </button>
         <button className="card">
-          <h3>{textoCard}</h3>
+          <h3 style={h3Style}>{textoCard}</h3>
           <p>{pgCard}</p>
           <div className="circle"></div>
         </button>
