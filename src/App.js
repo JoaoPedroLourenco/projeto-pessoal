@@ -14,15 +14,18 @@ function App() {
   const [pagina, setPagina] = useState(pages[0].page);
 
   const homePage = () => {
+    setPagina(pages[0].page);
+  };
+
+  const outraPage = () => {
     setPagina(pages[1].page);
   };
 
   return (
     <div className="App">
-      <SideBar />
+      <SideBar homePage={homePage} outraPage={outraPage} />
       {pagina === "home" && (
         <MiddlePart
-          homePage={homePage}
           textoCard="Lorem Ipsum"
           pgCard="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit excepturi eos voluptatem dolorem delectus magni vero iure voluptate vitae, ipsa dolor asperiores mollitia unde beatae dolorum nulla, sequi dicta cum"
         />

@@ -2,6 +2,7 @@
     width: 850px;
     height: auto;
     border-right: 1px solid #ffffff4d;
+   
 }
 
 .middle > .title{
@@ -83,6 +84,10 @@
 
 .card:focus{
     transition-duration: 1.s;
+    outline: 2px solid #6e6ac7;
+}
+
+.card:focus:hover{
     outline: 2px solid #6e6ac7;
 }
 

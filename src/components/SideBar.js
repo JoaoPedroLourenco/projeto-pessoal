@@ -1,15 +1,19 @@
 import React from "react";
 import "./SideBar.css";
 
-const SideBar = ({ homePage }) => {
+const SideBar = ({ homePage, outraPage }) => {
   return (
     <aside>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
           <li>
-            <button onClick={homePage}>Contacts</button>
+            <button onClick={homePage}>Home</button>
+          </li>
+          <li>
+            <button>About</button>
+          </li>
+          <li>
+            <button onClick={outraPage}>Contacts</button>
           </li>
         </ul>
       </nav>
