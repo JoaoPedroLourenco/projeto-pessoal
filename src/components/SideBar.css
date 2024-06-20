@@ -1,6 +1,6 @@
 aside{
     width: 300px;
-    height: 80vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,5 +48,13 @@ li:hover{
 }
 
 .login > button:hover{
+    background: #454545;
+}
+
+aside > nav > ul > li > button:focus{
+    background: #454545;
+}
+
+.login > button:focus{
     background: #454545;
 }

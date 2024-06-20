@@ -43,10 +43,11 @@ form > input{
     color: white;
     background: #ffffff23;
     outline: 1px solid #ffffff67;
+    transition: .15s;
 }
 
 input:focus{
-    transition: .15s ease-in-out;
+    transition: .15s;
     box-shadow: 0px 0px 0px 5px #6f6ac77e ;
 }
 

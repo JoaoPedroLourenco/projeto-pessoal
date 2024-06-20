@@ -3,7 +3,7 @@ import "./OutraPage.css";
 
 const OutraPage = () => {
   return (
-    <div className="other">
+    <div className="Container other">
       <div className="title">
         <h1>Outra Page</h1>
       </div>

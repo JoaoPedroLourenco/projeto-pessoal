@@ -1,8 +1,9 @@
 .App{
-  width: 80vw;
-  height: 80vh;
+  width: 95vw;
+  height: 95vh;
   border-radius: 15px;
   background: #383838;
+  backdrop-filter: blur(10px);
   box-shadow: 0px 4px 2px #0000004b;
   display: flex;
   overflow: hidden;

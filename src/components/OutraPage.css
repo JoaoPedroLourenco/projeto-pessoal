@@ -1,11 +1,3 @@
-.other{
-    width: 850px;
-    height: auto;
-    border-right: 1px solid #ffffff4d;
-    /* overflow-y: scroll;
-    position: relative; */
-}
-
 .other > .title{
     width: 100%;
     height: 70px;

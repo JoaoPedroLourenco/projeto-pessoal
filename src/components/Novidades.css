@@ -12,13 +12,13 @@
 
 .novidades{
     width: 300px;
+    height: 90%;
     text-align: center;
     background: #4D4D4D;
     border-radius: 15px;
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -33,7 +33,7 @@
 
 .novidades > .novidadeCards{
     position: relative;
-    width: 60%;
+    width: 90%;
     height: auto;
     padding: 20px;
     display: flex;

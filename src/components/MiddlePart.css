@@ -27,7 +27,7 @@
     text-align: justify;
 }
 
-.middle > .cards{
+.Container > .cards{
     width: 100%;
     height: auto;
     display: flex;
